@@ -1,0 +1,3499 @@
+2021-04-19 16:18:12+0800 [-] Loading buildbot.tac...
+2021-04-19 16:18:12+0800 [-] Loaded.
+2021-04-19 16:18:12+0800 [-] twistd 21.2.0 (/Users/xuheng/workspace/buildbot/sandbox/bin/python3.9 3.9.4) starting up.
+2021-04-19 16:18:12+0800 [-] reactor class: twisted.internet.selectreactor.SelectReactor.
+2021-04-19 16:18:12+0800 [-] Starting Worker -- version: 2021.04.06
+2021-04-19 16:18:12+0800 [-] recording hostname in twistd.hostname
+2021-04-19 16:18:12+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 16:18:12+0800 [Broker,client] message from master: attached
+2021-04-19 16:18:12+0800 [Broker,client] message from master: attached
+2021-04-19 16:18:12+0800 [Broker,client] Connected to buildmaster; worker is ready
+2021-04-19 16:18:12+0800 [Broker,client] sending application-level keepalives every 600 seconds
+2021-04-19 16:18:12+0800 [Broker,client] message from master: ping
+2021-04-19 16:18:12+0800 [Broker,client]  startCommand:shell [id 0]
+2021-04-19 16:18:12+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 16:18:12+0800 [Broker,client]  svn --version
+2021-04-19 16:18:12+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 16:18:12+0800 [Broker,client]   watching logfiles {}
+2021-04-19 16:18:12+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 16:18:12+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 16:18:12+0800 [Broker,client]   using PTY: False
+2021-04-19 16:18:12+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.034896
+2021-04-19 16:18:12+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1044f2910>
+2021-04-19 16:18:12+0800 [Broker,client]  startCommand:stat [id 1]
+2021-04-19 16:18:12+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/runtests/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/runtests/build/.buildbot-patched'
+2021-04-19 16:18:12+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1044f23a0>
+2021-04-19 16:18:12+0800 [Broker,client]  startCommand:stat [id 2]
+2021-04-19 16:18:12+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/runtests/build/.svn failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/runtests/build/.svn'
+2021-04-19 16:18:12+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1044f2af0>
+2021-04-19 16:18:12+0800 [Broker,client]  startCommand:rmdir [id 3]
+2021-04-19 16:18:12+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 16:18:12+0800 [Broker,client]  rm -rf /Users/xuheng/workspace/buildbot/worker/runtests/build
+2021-04-19 16:18:12+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests (timeout 1200 secs)
+2021-04-19 16:18:12+0800 [Broker,client]   watching logfiles {}
+2021-04-19 16:18:12+0800 [Broker,client]   argv: [b'rm', b'-rf', b'/Users/xuheng/workspace/buildbot/worker/runtests/build']
+2021-04-19 16:18:12+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 16:18:12+0800 [Broker,client]   using PTY: False
+2021-04-19 16:18:12+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.004352
+2021-04-19 16:18:12+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.RemoveDirectory object at 0x1044f2130>
+2021-04-19 16:18:12+0800 [Broker,client]  startCommand:shell [id 4]
+2021-04-19 16:18:12+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 16:18:12+0800 [Broker,client]  svn checkout svn://127.0.0.1 . --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 16:18:12+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 16:18:12+0800 [Broker,client]   watching logfiles {}
+2021-04-19 16:18:12+0800 [Broker,client]   argv: [b'svn', b'checkout', b'svn://127.0.0.1', b'.', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 16:18:12+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 16:18:12+0800 [Broker,client]   using PTY: False
+2021-04-19 16:18:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 1.032616
+2021-04-19 16:18:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1044fb700>
+2021-04-19 16:18:14+0800 [Broker,client]  startCommand:shell [id 5]
+2021-04-19 16:18:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 16:18:14+0800 [Broker,client]  svn info --xml
+2021-04-19 16:18:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 16:18:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 16:18:14+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 16:18:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 16:18:14+0800 [Broker,client]   using PTY: False
+2021-04-19 16:18:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.014682
+2021-04-19 16:18:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1044fb9d0>
+2021-04-19 16:18:14+0800 [Broker,client]  startCommand:shell [id 6]
+2021-04-19 16:18:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 16:18:14+0800 [Broker,client]  python3 manage.py test polls
+2021-04-19 16:18:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 16:18:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 16:18:14+0800 [Broker,client]   argv: [b'python3', b'manage.py', b'test', b'polls']
+2021-04-19 16:18:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 16:18:14+0800 [Broker,client]   using PTY: False
+2021-04-19 16:18:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.376814
+2021-04-19 16:18:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104512f70>
+2021-04-19 16:28:13+0800 [-] sending app-level keepalive
+2021-04-19 16:28:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 16:38:13+0800 [-] sending app-level keepalive
+2021-04-19 16:38:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 16:48:13+0800 [-] sending app-level keepalive
+2021-04-19 16:48:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 16:58:13+0800 [-] sending app-level keepalive
+2021-04-19 16:58:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 17:05:14+0800 [Broker,client] message from master: ping
+2021-04-19 17:05:14+0800 [Broker,client]  startCommand:shell [id 7]
+2021-04-19 17:05:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:05:14+0800 [Broker,client]  svn --version
+2021-04-19 17:05:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 17:05:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:05:14+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 17:05:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:05:14+0800 [Broker,client]   using PTY: False
+2021-04-19 17:05:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.018424
+2021-04-19 17:05:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104512b20>
+2021-04-19 17:05:14+0800 [Broker,client]  startCommand:stat [id 8]
+2021-04-19 17:05:14+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/runtests/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/runtests/build/.buildbot-patched'
+2021-04-19 17:05:14+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1045128e0>
+2021-04-19 17:05:14+0800 [Broker,client]  startCommand:stat [id 9]
+2021-04-19 17:05:14+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1045129a0>
+2021-04-19 17:05:14+0800 [Broker,client]  startCommand:shell [id 10]
+2021-04-19 17:05:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:05:14+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 17:05:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 17:05:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:05:14+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 17:05:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:05:14+0800 [Broker,client]   using PTY: False
+2021-04-19 17:05:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.016445
+2021-04-19 17:05:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514280>
+2021-04-19 17:05:14+0800 [Broker,client]  startCommand:shell [id 11]
+2021-04-19 17:05:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:05:14+0800 [Broker,client]  svn update --revision 9 --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 17:05:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 17:05:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:05:14+0800 [Broker,client]   argv: [b'svn', b'update', b'--revision', b'9', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 17:05:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:05:14+0800 [Broker,client]   using PTY: False
+2021-04-19 17:05:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.915474
+2021-04-19 17:05:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045144f0>
+2021-04-19 17:05:15+0800 [Broker,client]  startCommand:shell [id 12]
+2021-04-19 17:05:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:05:15+0800 [Broker,client]  svn info --xml
+2021-04-19 17:05:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 17:05:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:05:15+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 17:05:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:05:15+0800 [Broker,client]   using PTY: False
+2021-04-19 17:05:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.016614
+2021-04-19 17:05:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514430>
+2021-04-19 17:05:15+0800 [Broker,client]  startCommand:shell [id 13]
+2021-04-19 17:05:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:05:15+0800 [Broker,client]  python3 manage.py test polls
+2021-04-19 17:05:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 17:05:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:05:15+0800 [Broker,client]   argv: [b'python3', b'manage.py', b'test', b'polls']
+2021-04-19 17:05:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:05:15+0800 [Broker,client]   using PTY: False
+2021-04-19 17:05:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.399134
+2021-04-19 17:05:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104524100>
+2021-04-19 17:08:13+0800 [-] sending app-level keepalive
+2021-04-19 17:08:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 17:18:12+0800 [Broker,client] message from master: keepalive
+2021-04-19 17:18:13+0800 [-] sending app-level keepalive
+2021-04-19 17:18:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 17:28:13+0800 [-] sending app-level keepalive
+2021-04-19 17:28:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 17:34:13+0800 [Broker,client] message from master: attached
+2021-04-19 17:34:13+0800 [Broker,client] message from master: ping
+2021-04-19 17:34:14+0800 [Broker,client]  startCommand:shell [id 14]
+2021-04-19 17:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:34:14+0800 [Broker,client]  cp data.csv ~/data.csv
+2021-04-19 17:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:34:14+0800 [Broker,client]   argv: b'cp data.csv ~/data.csv'
+2021-04-19 17:34:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 17:34:14+0800 [-] command finished with signal None, exit code 1, elapsedTime: 0.008684
+2021-04-19 17:34:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045248e0>
+2021-04-19 17:38:13+0800 [-] sending app-level keepalive
+2021-04-19 17:38:13+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 17:41:27+0800 [Broker,client] message from master: ping
+2021-04-19 17:41:28+0800 [Broker,client]  startCommand:shell [id 15]
+2021-04-19 17:41:28+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:41:28+0800 [Broker,client]  svn --version
+2021-04-19 17:41:28+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:41:28+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:41:28+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 17:41:28+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:41:28+0800 [Broker,client]   using PTY: False
+2021-04-19 17:41:28+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.040956
+2021-04-19 17:41:28+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104524490>
+2021-04-19 17:41:28+0800 [Broker,client]  startCommand:stat [id 16]
+2021-04-19 17:41:28+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 17:41:28+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104524f40>
+2021-04-19 17:41:28+0800 [Broker,client]  startCommand:stat [id 17]
+2021-04-19 17:41:28+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.svn failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.svn'
+2021-04-19 17:41:28+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104524eb0>
+2021-04-19 17:41:28+0800 [Broker,client]  startCommand:rmdir [id 18]
+2021-04-19 17:41:28+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:41:28+0800 [Broker,client]  rm -rf /Users/xuheng/workspace/buildbot/worker/uploadResult/build
+2021-04-19 17:41:28+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult (timeout 1200 secs)
+2021-04-19 17:41:28+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:41:28+0800 [Broker,client]   argv: [b'rm', b'-rf', b'/Users/xuheng/workspace/buildbot/worker/uploadResult/build']
+2021-04-19 17:41:28+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:41:28+0800 [Broker,client]   using PTY: False
+2021-04-19 17:41:28+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.006845
+2021-04-19 17:41:28+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.RemoveDirectory object at 0x104524160>
+2021-04-19 17:41:28+0800 [Broker,client]  startCommand:shell [id 19]
+2021-04-19 17:41:28+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:41:28+0800 [Broker,client]  svn checkout svn://127.0.0.1 . --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 17:41:28+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:41:28+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:41:28+0800 [Broker,client]   argv: [b'svn', b'checkout', b'svn://127.0.0.1', b'.', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 17:41:28+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:41:28+0800 [Broker,client]   using PTY: False
+2021-04-19 17:41:29+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.942783
+2021-04-19 17:41:29+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x10452dac0>
+2021-04-19 17:41:29+0800 [Broker,client]  startCommand:shell [id 20]
+2021-04-19 17:41:29+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:41:29+0800 [Broker,client]  svn info --xml
+2021-04-19 17:41:29+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:41:29+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:41:29+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 17:41:29+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:41:29+0800 [Broker,client]   using PTY: False
+2021-04-19 17:41:29+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.018926
+2021-04-19 17:41:29+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x10452d640>
+2021-04-19 17:41:29+0800 [Broker,client]  startCommand:shell [id 21]
+2021-04-19 17:41:29+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:41:29+0800 [Broker,client]  pwd
+2021-04-19 17:41:29+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:41:29+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:41:29+0800 [Broker,client]   argv: b'pwd'
+2021-04-19 17:41:29+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:41:29+0800 [Broker,client]   using PTY: False
+2021-04-19 17:41:29+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.006161
+2021-04-19 17:41:29+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104531bb0>
+2021-04-19 17:43:47+0800 [Broker,client] message from master: ping
+2021-04-19 17:43:47+0800 [Broker,client]  startCommand:shell [id 22]
+2021-04-19 17:43:47+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:43:47+0800 [Broker,client]  svn --version
+2021-04-19 17:43:47+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:43:47+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:43:47+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 17:43:47+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:43:47+0800 [Broker,client]   using PTY: False
+2021-04-19 17:43:47+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.045204
+2021-04-19 17:43:47+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045310d0>
+2021-04-19 17:43:47+0800 [Broker,client]  startCommand:stat [id 23]
+2021-04-19 17:43:47+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 17:43:47+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104531460>
+2021-04-19 17:43:47+0800 [Broker,client]  startCommand:stat [id 24]
+2021-04-19 17:43:47+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104531250>
+2021-04-19 17:43:47+0800 [Broker,client]  startCommand:shell [id 25]
+2021-04-19 17:43:47+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:43:47+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 17:43:47+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:43:47+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:43:47+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 17:43:47+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:43:47+0800 [Broker,client]   using PTY: False
+2021-04-19 17:43:47+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.018278
+2021-04-19 17:43:47+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x10452d3a0>
+2021-04-19 17:43:47+0800 [Broker,client]  startCommand:shell [id 26]
+2021-04-19 17:43:47+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:43:47+0800 [Broker,client]  svn update --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 17:43:47+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:43:47+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:43:47+0800 [Broker,client]   argv: [b'svn', b'update', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 17:43:47+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:43:47+0800 [Broker,client]   using PTY: False
+2021-04-19 17:43:48+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.188780
+2021-04-19 17:43:48+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x10452d820>
+2021-04-19 17:43:48+0800 [Broker,client]  startCommand:shell [id 27]
+2021-04-19 17:43:48+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:43:48+0800 [Broker,client]  svn info --xml
+2021-04-19 17:43:48+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:43:48+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:43:48+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 17:43:48+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:43:48+0800 [Broker,client]   using PTY: False
+2021-04-19 17:43:48+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.019411
+2021-04-19 17:43:48+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104531ee0>
+2021-04-19 17:43:48+0800 [Broker,client]  startCommand:shell [id 28]
+2021-04-19 17:43:48+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 17:43:48+0800 [Broker,client]  cp ./data.csv ~/Documents/data.csv
+2021-04-19 17:43:48+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 17:43:48+0800 [Broker,client]   watching logfiles {}
+2021-04-19 17:43:48+0800 [Broker,client]   argv: b'cp ./data.csv ~/Documents/data.csv'
+2021-04-19 17:43:48+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 17:43:48+0800 [Broker,client]   using PTY: False
+2021-04-19 17:43:48+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.009816
+2021-04-19 17:43:48+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104531d30>
+2021-04-19 17:55:16+0800 [-] sending app-level keepalive
+2021-04-19 17:55:16+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 18:05:16+0800 [-] sending app-level keepalive
+2021-04-19 18:05:16+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 18:15:16+0800 [-] sending app-level keepalive
+2021-04-19 18:15:16+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 18:18:12+0800 [Broker,client] message from master: keepalive
+2021-04-19 18:25:16+0800 [-] sending app-level keepalive
+2021-04-19 18:25:16+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 18:34:13+0800 [Broker,client] message from master: ping
+2021-04-19 18:34:14+0800 [Broker,client]  startCommand:shell [id 29]
+2021-04-19 18:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 18:34:14+0800 [Broker,client]  svn --version
+2021-04-19 18:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 18:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 18:34:14+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 18:34:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 18:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 18:34:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.025786
+2021-04-19 18:34:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045243a0>
+2021-04-19 18:34:14+0800 [Broker,client]  startCommand:stat [id 30]
+2021-04-19 18:34:14+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 18:34:14+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1045313d0>
+2021-04-19 18:34:14+0800 [Broker,client]  startCommand:stat [id 31]
+2021-04-19 18:34:14+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104531670>
+2021-04-19 18:34:14+0800 [Broker,client]  startCommand:shell [id 32]
+2021-04-19 18:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 18:34:14+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 18:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 18:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 18:34:14+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 18:34:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 18:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 18:34:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.016758
+2021-04-19 18:34:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045248e0>
+2021-04-19 18:34:14+0800 [Broker,client]  startCommand:shell [id 33]
+2021-04-19 18:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 18:34:14+0800 [Broker,client]  svn update --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 18:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 18:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 18:34:14+0800 [Broker,client]   argv: [b'svn', b'update', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 18:34:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 18:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 18:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.941206
+2021-04-19 18:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104524820>
+2021-04-19 18:34:15+0800 [Broker,client]  startCommand:shell [id 34]
+2021-04-19 18:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 18:34:15+0800 [Broker,client]  svn info --xml
+2021-04-19 18:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 18:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 18:34:15+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 18:34:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 18:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 18:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.014690
+2021-04-19 18:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045244f0>
+2021-04-19 18:34:15+0800 [Broker,client]  startCommand:shell [id 35]
+2021-04-19 18:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 18:34:15+0800 [Broker,client]  cp ./data.csv ~/Documents/data.csv
+2021-04-19 18:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 18:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 18:34:15+0800 [Broker,client]   argv: b'cp ./data.csv ~/Documents/data.csv'
+2021-04-19 18:34:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 18:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 18:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.007228
+2021-04-19 18:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045248e0>
+2021-04-19 18:35:16+0800 [-] sending app-level keepalive
+2021-04-19 18:35:16+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 19:27:17+0800 [Broker,client] message from master: keepalive
+2021-04-19 19:27:17+0800 [-] sending app-level keepalive
+2021-04-19 19:27:17+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 19:47:43+0800 [Broker,client] message from master: ping
+2021-04-19 19:47:43+0800 [-] sending app-level keepalive
+2021-04-19 19:47:43+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 19:47:43+0800 [Broker,client]  startCommand:shell [id 36]
+2021-04-19 19:47:43+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 19:47:43+0800 [Broker,client]  svn --version
+2021-04-19 19:47:43+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 19:47:43+0800 [Broker,client]   watching logfiles {}
+2021-04-19 19:47:43+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 19:47:43+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 19:47:43+0800 [Broker,client]   using PTY: False
+2021-04-19 19:47:43+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.019123
+2021-04-19 19:47:43+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514e20>
+2021-04-19 19:47:43+0800 [Broker,client]  startCommand:stat [id 37]
+2021-04-19 19:47:43+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 19:47:43+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104524e50>
+2021-04-19 19:47:43+0800 [Broker,client]  startCommand:stat [id 38]
+2021-04-19 19:47:43+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104524850>
+2021-04-19 19:47:43+0800 [Broker,client]  startCommand:shell [id 39]
+2021-04-19 19:47:43+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 19:47:43+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 19:47:43+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 19:47:43+0800 [Broker,client]   watching logfiles {}
+2021-04-19 19:47:43+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 19:47:43+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 19:47:43+0800 [Broker,client]   using PTY: False
+2021-04-19 19:47:43+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.018552
+2021-04-19 19:47:43+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045149a0>
+2021-04-19 19:47:43+0800 [Broker,client]  startCommand:shell [id 40]
+2021-04-19 19:47:43+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 19:47:43+0800 [Broker,client]  svn update --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 19:47:43+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 19:47:43+0800 [Broker,client]   watching logfiles {}
+2021-04-19 19:47:43+0800 [Broker,client]   argv: [b'svn', b'update', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 19:47:43+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 19:47:43+0800 [Broker,client]   using PTY: False
+2021-04-19 19:47:44+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.204797
+2021-04-19 19:47:44+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514ac0>
+2021-04-19 19:47:44+0800 [Broker,client]  startCommand:shell [id 41]
+2021-04-19 19:47:44+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 19:47:44+0800 [Broker,client]  svn info --xml
+2021-04-19 19:47:44+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 19:47:44+0800 [Broker,client]   watching logfiles {}
+2021-04-19 19:47:44+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 19:47:44+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 19:47:44+0800 [Broker,client]   using PTY: False
+2021-04-19 19:47:44+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.014552
+2021-04-19 19:47:44+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514fd0>
+2021-04-19 19:47:44+0800 [Broker,client]  startCommand:shell [id 42]
+2021-04-19 19:47:44+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 19:47:44+0800 [Broker,client]  cp ./data.csv ~/Documents/data.csv
+2021-04-19 19:47:44+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 19:47:44+0800 [Broker,client]   watching logfiles {}
+2021-04-19 19:47:44+0800 [Broker,client]   argv: b'cp ./data.csv ~/Documents/data.csv'
+2021-04-19 19:47:44+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 19:47:44+0800 [Broker,client]   using PTY: False
+2021-04-19 19:47:44+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.006623
+2021-04-19 19:47:44+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514700>
+2021-04-19 20:34:10+0800 [Broker,client] message from master: keepalive
+2021-04-19 20:34:10+0800 [-] sending app-level keepalive
+2021-04-19 20:34:10+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 20:34:13+0800 [Broker,client] message from master: ping
+2021-04-19 20:34:13+0800 [Broker,client]  startCommand:shell [id 43]
+2021-04-19 20:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 20:34:13+0800 [Broker,client]  svn --version
+2021-04-19 20:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 20:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 20:34:13+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 20:34:13+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 20:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 20:34:13+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.018552
+2021-04-19 20:34:13+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514370>
+2021-04-19 20:34:13+0800 [Broker,client]  startCommand:stat [id 44]
+2021-04-19 20:34:13+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 20:34:13+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x104524b80>
+2021-04-19 20:34:13+0800 [Broker,client]  startCommand:stat [id 45]
+2021-04-19 20:34:13+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1045247f0>
+2021-04-19 20:34:13+0800 [Broker,client]  startCommand:shell [id 46]
+2021-04-19 20:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 20:34:13+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 20:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 20:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 20:34:13+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 20:34:13+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 20:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 20:34:13+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.016027
+2021-04-19 20:34:13+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104512b50>
+2021-04-19 20:34:13+0800 [Broker,client]  startCommand:shell [id 47]
+2021-04-19 20:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 20:34:13+0800 [Broker,client]  svn update --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 20:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 20:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 20:34:13+0800 [Broker,client]   argv: [b'svn', b'update', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 20:34:13+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 20:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 20:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 1.027302
+2021-04-19 20:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104512430>
+2021-04-19 20:34:15+0800 [Broker,client]  startCommand:shell [id 48]
+2021-04-19 20:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 20:34:15+0800 [Broker,client]  svn info --xml
+2021-04-19 20:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 20:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 20:34:15+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 20:34:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 20:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 20:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.015058
+2021-04-19 20:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045122e0>
+2021-04-19 20:34:15+0800 [Broker,client]  startCommand:shell [id 49]
+2021-04-19 20:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 20:34:15+0800 [Broker,client]  cp ./data.csv ~/Documents/data.csv
+2021-04-19 20:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 20:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 20:34:15+0800 [Broker,client]   argv: b'cp ./data.csv ~/Documents/data.csv'
+2021-04-19 20:34:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 20:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 20:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.006671
+2021-04-19 20:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104512940>
+2021-04-19 20:49:19+0800 [-] sending app-level keepalive
+2021-04-19 20:49:19+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 21:34:10+0800 [Broker,client] message from master: keepalive
+2021-04-19 21:34:10+0800 [-] sending app-level keepalive
+2021-04-19 21:34:10+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 21:34:13+0800 [Broker,client] message from master: ping
+2021-04-19 21:34:13+0800 [Broker,client]  startCommand:shell [id 50]
+2021-04-19 21:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 21:34:13+0800 [Broker,client]  svn --version
+2021-04-19 21:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 21:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 21:34:13+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 21:34:13+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 21:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 21:34:13+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.021467
+2021-04-19 21:34:13+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045147f0>
+2021-04-19 21:34:13+0800 [Broker,client]  startCommand:stat [id 51]
+2021-04-19 21:34:13+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 21:34:13+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1044fbd90>
+2021-04-19 21:34:13+0800 [Broker,client]  startCommand:stat [id 52]
+2021-04-19 21:34:13+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1044fb9d0>
+2021-04-19 21:34:13+0800 [Broker,client]  startCommand:shell [id 53]
+2021-04-19 21:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 21:34:13+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 21:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 21:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 21:34:13+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 21:34:13+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 21:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 21:34:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.017410
+2021-04-19 21:34:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514610>
+2021-04-19 21:34:14+0800 [Broker,client]  startCommand:shell [id 54]
+2021-04-19 21:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 21:34:14+0800 [Broker,client]  svn update --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 21:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 21:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 21:34:14+0800 [Broker,client]   argv: [b'svn', b'update', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 21:34:14+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 21:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 21:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 1.008874
+2021-04-19 21:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1045148b0>
+2021-04-19 21:34:15+0800 [Broker,client]  startCommand:shell [id 55]
+2021-04-19 21:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 21:34:15+0800 [Broker,client]  svn info --xml
+2021-04-19 21:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 21:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 21:34:15+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 21:34:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 21:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 21:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.017808
+2021-04-19 21:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514cd0>
+2021-04-19 21:34:15+0800 [Broker,client]  startCommand:shell [id 56]
+2021-04-19 21:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 21:34:15+0800 [Broker,client]  cp ./data.csv ~/Documents/data.csv
+2021-04-19 21:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 21:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 21:34:15+0800 [Broker,client]   argv: b'cp ./data.csv ~/Documents/data.csv'
+2021-04-19 21:34:15+0800 [Broker,client]  environment:
+	{'COLORFGBG': '15;0',
+	 'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:',
+	 'ITERM_PROFILE': 'nord',
+	 'ITERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LC_CTYPE': 'UTF-8',
+	 'LC_TERMINAL': 'iTerm2',
+	 'LC_TERMINAL_VERSION': '3.4.4',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man::',
+	 'OLDPWD': '/Users/xuheng/workspace/svn_repo',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'iTerm.app',
+	 'TERM_PROGRAM_VERSION': '3.4.4',
+	 'TERM_SESSION_ID': 'w0t0p0:CB284132-8059-4629-8E6D-A10A8DF2CA06',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.googlecode.iterm2',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 21:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 21:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.007975
+2021-04-19 21:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x104514040>
+2021-04-19 21:43:38+0800 [-] Scheduling retry 1 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x104358c10> in 1.6096708130252677 seconds.
+2021-04-19 21:43:38+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:39+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:39+0800 [-] Scheduling retry 2 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x104358c10> in 2.9374105727541635 seconds.
+2021-04-19 21:43:39+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:42+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:42+0800 [-] Scheduling retry 3 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x104358c10> in 3.953124553958215 seconds.
+2021-04-19 21:43:42+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:46+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:46+0800 [-] Scheduling retry 4 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x104358c10> in 5.587481967614212 seconds.
+2021-04-19 21:43:46+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:52+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:52+0800 [-] Scheduling retry 5 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x104358c10> in 7.935385531994182 seconds.
+2021-04-19 21:43:52+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x104358970>
+2021-04-19 21:43:57+0800 [-] Received SIGTERM, shutting down.
+2021-04-19 21:43:57+0800 [-] Main loop terminated.
+2021-04-19 21:43:57+0800 [-] Server Shut Down.
+2021-04-19 21:49:14+0800 [-] Loading buildbot.tac...
+2021-04-19 21:49:14+0800 [-] Loaded.
+2021-04-19 21:49:14+0800 [-] twistd 21.2.0 (/Users/xuheng/workspace/buildbot/sandbox/bin/python3.9 3.9.4) starting up.
+2021-04-19 21:49:14+0800 [-] reactor class: twisted.internet.selectreactor.SelectReactor.
+2021-04-19 21:49:14+0800 [-] Starting Worker -- version: 2021.04.06
+2021-04-19 21:49:14+0800 [-] recording hostname in twistd.hostname
+2021-04-19 21:49:14+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 21:49:14+0800 [Broker,client] message from master: attached
+2021-04-19 21:49:14+0800 [Broker,client] message from master: attached
+2021-04-19 21:49:14+0800 [Broker,client] message from master: attached
+2021-04-19 21:49:14+0800 [Broker,client] Connected to buildmaster; worker is ready
+2021-04-19 21:49:14+0800 [Broker,client] sending application-level keepalives every 600 seconds
+2021-04-19 21:59:14+0800 [-] sending app-level keepalive
+2021-04-19 21:59:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 22:01:53+0800 [Broker,client] message from master: ping
+2021-04-19 22:01:53+0800 [Broker,client]  startCommand:shell [id 0]
+2021-04-19 22:01:53+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:01:53+0800 [Broker,client]  svn --version
+2021-04-19 22:01:53+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 22:01:53+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:01:53+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 22:01:53+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:01:53+0800 [Broker,client]   using PTY: False
+2021-04-19 22:01:53+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.015557
+2021-04-19 22:01:53+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020dab50>
+2021-04-19 22:01:53+0800 [Broker,client]  startCommand:stat [id 1]
+2021-04-19 22:01:53+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/runtests/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/runtests/build/.buildbot-patched'
+2021-04-19 22:01:53+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1020dacd0>
+2021-04-19 22:01:53+0800 [Broker,client]  startCommand:stat [id 2]
+2021-04-19 22:01:53+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1020dad30>
+2021-04-19 22:01:53+0800 [Broker,client]  startCommand:shell [id 3]
+2021-04-19 22:01:53+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:01:53+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 22:01:53+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 22:01:53+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:01:53+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 22:01:53+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:01:53+0800 [Broker,client]   using PTY: False
+2021-04-19 22:01:53+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.011400
+2021-04-19 22:01:53+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020da250>
+2021-04-19 22:01:53+0800 [Broker,client]  startCommand:shell [id 4]
+2021-04-19 22:01:53+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:01:53+0800 [Broker,client]  svn update --revision 11 --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 22:01:53+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 22:01:53+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:01:53+0800 [Broker,client]   argv: [b'svn', b'update', b'--revision', b'11', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 22:01:53+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:01:53+0800 [Broker,client]   using PTY: False
+2021-04-19 22:01:54+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.607485
+2021-04-19 22:01:54+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020e7ac0>
+2021-04-19 22:01:54+0800 [Broker,client]  startCommand:shell [id 5]
+2021-04-19 22:01:54+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:01:54+0800 [Broker,client]  svn info --xml
+2021-04-19 22:01:54+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 22:01:54+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:01:54+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 22:01:54+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:01:54+0800 [Broker,client]   using PTY: False
+2021-04-19 22:01:54+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.024693
+2021-04-19 22:01:54+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020da7f0>
+2021-04-19 22:01:54+0800 [Broker,client]  startCommand:shell [id 6]
+2021-04-19 22:01:54+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:01:54+0800 [Broker,client]  python3 manage.py test polls
+2021-04-19 22:01:54+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/runtests/build (timeout 1200 secs)
+2021-04-19 22:01:54+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:01:54+0800 [Broker,client]   argv: [b'python3', b'manage.py', b'test', b'polls']
+2021-04-19 22:01:54+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/runtests/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:01:54+0800 [Broker,client]   using PTY: False
+2021-04-19 22:01:54+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.356320
+2021-04-19 22:01:54+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020fd760>
+2021-04-19 22:09:14+0800 [-] sending app-level keepalive
+2021-04-19 22:09:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 22:19:14+0800 [-] sending app-level keepalive
+2021-04-19 22:19:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 22:29:14+0800 [-] sending app-level keepalive
+2021-04-19 22:29:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 22:34:13+0800 [Broker,client] message from master: ping
+2021-04-19 22:34:13+0800 [Broker,client]  startCommand:shell [id 7]
+2021-04-19 22:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:34:13+0800 [Broker,client]  svn --version
+2021-04-19 22:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 22:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:34:13+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 22:34:13+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 22:34:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.023949
+2021-04-19 22:34:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020fd910>
+2021-04-19 22:34:14+0800 [Broker,client]  startCommand:stat [id 8]
+2021-04-19 22:34:14+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 22:34:14+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1020daa90>
+2021-04-19 22:34:14+0800 [Broker,client]  startCommand:stat [id 9]
+2021-04-19 22:34:14+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x1020dabe0>
+2021-04-19 22:34:14+0800 [Broker,client]  startCommand:shell [id 10]
+2021-04-19 22:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:34:14+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 22:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 22:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:34:14+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 22:34:14+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 22:34:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.012330
+2021-04-19 22:34:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020fd8e0>
+2021-04-19 22:34:14+0800 [Broker,client]  startCommand:shell [id 11]
+2021-04-19 22:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:34:14+0800 [Broker,client]  svn update --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 22:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 22:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:34:14+0800 [Broker,client]   argv: [b'svn', b'update', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 22:34:14+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 22:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.991341
+2021-04-19 22:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020fdf40>
+2021-04-19 22:34:15+0800 [Broker,client]  startCommand:shell [id 12]
+2021-04-19 22:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:34:15+0800 [Broker,client]  svn info --xml
+2021-04-19 22:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 22:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:34:15+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 22:34:15+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 22:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.014974
+2021-04-19 22:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1020fd4c0>
+2021-04-19 22:34:15+0800 [Broker,client]  startCommand:shell [id 13]
+2021-04-19 22:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 22:34:15+0800 [Broker,client]  cp ./data.csv ~/Documents/data.csv
+2021-04-19 22:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 22:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 22:34:15+0800 [Broker,client]   argv: b'cp ./data.csv ~/Documents/data.csv'
+2021-04-19 22:34:15+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 22:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 22:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.041380
+2021-04-19 22:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x102100a30>
+2021-04-19 22:39:14+0800 [-] sending app-level keepalive
+2021-04-19 22:39:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 22:49:14+0800 [Broker,client] message from master: keepalive
+2021-04-19 22:49:14+0800 [-] sending app-level keepalive
+2021-04-19 22:49:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 22:59:14+0800 [-] sending app-level keepalive
+2021-04-19 22:59:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 23:09:14+0800 [-] sending app-level keepalive
+2021-04-19 23:09:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 23:19:14+0800 [-] sending app-level keepalive
+2021-04-19 23:19:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 23:29:14+0800 [-] sending app-level keepalive
+2021-04-19 23:29:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 23:34:13+0800 [Broker,client] message from master: ping
+2021-04-19 23:34:13+0800 [Broker,client]  startCommand:shell [id 14]
+2021-04-19 23:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 23:34:13+0800 [Broker,client]  svn --version
+2021-04-19 23:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 23:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 23:34:13+0800 [Broker,client]   argv: [b'svn', b'--version']
+2021-04-19 23:34:13+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 23:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 23:34:13+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.014904
+2021-04-19 23:34:13+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1021124c0>
+2021-04-19 23:34:13+0800 [Broker,client]  startCommand:stat [id 15]
+2021-04-19 23:34:13+0800 [Broker,client] StatFile /Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched failed: [Errno 2] No such file or directory: '/Users/xuheng/workspace/buildbot/worker/uploadResult/build/.buildbot-patched'
+2021-04-19 23:34:13+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x102112520>
+2021-04-19 23:34:13+0800 [Broker,client]  startCommand:stat [id 16]
+2021-04-19 23:34:13+0800 [Broker,client] WorkerForBuilder.commandComplete <buildbot_worker.commands.fs.StatFile object at 0x102112970>
+2021-04-19 23:34:13+0800 [Broker,client]  startCommand:shell [id 17]
+2021-04-19 23:34:13+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 23:34:13+0800 [Broker,client]  svn info --xml --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 23:34:13+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 23:34:13+0800 [Broker,client]   watching logfiles {}
+2021-04-19 23:34:13+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 23:34:13+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 23:34:13+0800 [Broker,client]   using PTY: False
+2021-04-19 23:34:14+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.011732
+2021-04-19 23:34:14+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x102112dc0>
+2021-04-19 23:34:14+0800 [Broker,client]  startCommand:shell [id 18]
+2021-04-19 23:34:14+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 23:34:14+0800 [Broker,client]  svn update --non-interactive --no-auth-cache --username xuheng --password XXXXXX
+2021-04-19 23:34:14+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 23:34:14+0800 [Broker,client]   watching logfiles {}
+2021-04-19 23:34:14+0800 [Broker,client]   argv: [b'svn', b'update', b'--non-interactive', b'--no-auth-cache', b'--username', b'xuheng', b'--password', b'XXXXXX']
+2021-04-19 23:34:14+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 23:34:14+0800 [Broker,client]   using PTY: False
+2021-04-19 23:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 1.017085
+2021-04-19 23:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x102112910>
+2021-04-19 23:34:15+0800 [Broker,client]  startCommand:shell [id 19]
+2021-04-19 23:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 23:34:15+0800 [Broker,client]  svn info --xml
+2021-04-19 23:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 23:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 23:34:15+0800 [Broker,client]   argv: [b'svn', b'info', b'--xml']
+2021-04-19 23:34:15+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 23:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 23:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.016675
+2021-04-19 23:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1021128b0>
+2021-04-19 23:34:15+0800 [Broker,client]  startCommand:shell [id 20]
+2021-04-19 23:34:15+0800 [Broker,client] RunProcess._startCommand
+2021-04-19 23:34:15+0800 [Broker,client]  cp ./data.csv ~/Documents/data.csv
+2021-04-19 23:34:15+0800 [Broker,client]   in dir /Users/xuheng/workspace/buildbot/worker/uploadResult/build (timeout 1200 secs)
+2021-04-19 23:34:15+0800 [Broker,client]   watching logfiles {}
+2021-04-19 23:34:15+0800 [Broker,client]   argv: b'cp ./data.csv ~/Documents/data.csv'
+2021-04-19 23:34:15+0800 [Broker,client]  environment:
+	{'COLORTERM': 'truecolor',
+	 'COMMAND_MODE': 'unix2003',
+	 'CONDA_CHANGEPS1': 'no',
+	 'C_INCLUDE_PATH': '/Users/xuheng/.local/include',
+	 'DYLD_LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'GIT_ASKPASS': '/Applications/Visual Studio '
+	                'Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh',
+	 'HOME': '/Users/xuheng',
+	 'HOMEBREW_CELLAR': '/opt/homebrew/Cellar',
+	 'HOMEBREW_PREFIX': '/opt/homebrew',
+	 'HOMEBREW_REPOSITORY': '/opt/homebrew',
+	 'INFOPATH': '/opt/homebrew/share/info:/opt/homebrew/share/info:',
+	 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home',
+	 'LANG': 'en_US.UTF-8',
+	 'LESS': '-R',
+	 'LIBRARY_PATH': '/Users/xuheng/.local/lib',
+	 'LOGNAME': 'xuheng',
+	 'LSCOLORS': 'Gxfxcxdxbxegedabagacad',
+	 'MANPATH': '/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/opt/homebrew/share/man:',
+	 'OLDPWD': '/Users/xuheng/workspace/buildbot/Mysite',
+	 'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',
+	 'PAGER': 'less',
+	 'PATH': '/Users/xuheng/workspace/buildbot/sandbox/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/xuheng/Library/Python/3.9/bin:/Users/xuheng/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin',
+	 'PROMPT_EOL_MARK': '',
+	 'PWD': '/Users/xuheng/workspace/buildbot/worker/uploadResult/build',
+	 'SHELL': '/bin/zsh',
+	 'SHLVL': '1',
+	 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.nKFYLYc1uI/Listeners',
+	 'TERM': 'xterm-256color',
+	 'TERM_PROGRAM': 'vscode',
+	 'TERM_PROGRAM_VERSION': '1.55.2',
+	 'TMPDIR': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/',
+	 'USER': 'xuheng',
+	 'VIRTUAL_ENV': '/Users/xuheng/workspace/buildbot/sandbox',
+	 'VIRTUAL_ENV_DISABLE_PROMPT': '12',
+	 'VSCODE_GIT_ASKPASS_MAIN': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js',
+	 'VSCODE_GIT_ASKPASS_NODE': '/Applications/Visual Studio '
+	                            'Code.app/Contents/Frameworks/Code Helper '
+	                            '(Renderer).app/Contents/MacOS/Code Helper '
+	                            '(Renderer)',
+	 'VSCODE_GIT_IPC_HANDLE': '/var/folders/hm/tyn849g10tl3cs23ldx_tf4h0000gn/T/vscode-git-69321a7283.sock',
+	 'XPC_FLAGS': '0x0',
+	 'XPC_SERVICE_NAME': '0',
+	 'ZSH': '/Users/xuheng/.oh-my-zsh',
+	 '_': '/Users/xuheng/workspace/buildbot/sandbox/bin/buildbot-worker',
+	 '__CFBundleIdentifier': 'com.microsoft.VSCode',
+	 '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+	 'ftp_proxy': 'http://127.0.0.1:1081',
+	 'http_proxy': 'http://127.0.0.1:1081',
+	 'https_proxy': 'http://127.0.0.1:1081',
+	 'rsync_proxy': 'http://127.0.0.1:1081'}
+2021-04-19 23:34:15+0800 [Broker,client]   using PTY: False
+2021-04-19 23:34:15+0800 [-] command finished with signal None, exit code 0, elapsedTime: 0.008190
+2021-04-19 23:34:15+0800 [-] WorkerForBuilder.commandComplete <buildbot_worker.commands.shell.WorkerShellCommand object at 0x1021178e0>
+2021-04-19 23:39:14+0800 [-] sending app-level keepalive
+2021-04-19 23:39:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 23:49:14+0800 [Broker,client] message from master: keepalive
+2021-04-19 23:49:14+0800 [-] sending app-level keepalive
+2021-04-19 23:49:14+0800 [Broker,client] Master replied to keepalive, everything's fine
+2021-04-19 23:55:22+0800 [-] Scheduling retry 1 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x101f44ac0> in 1.9099787666486359 seconds.
+2021-04-19 23:55:22+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 23:55:24+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 23:55:24+0800 [-] Scheduling retry 2 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x101f44ac0> in 2.479556257703762 seconds.
+2021-04-19 23:55:24+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 23:55:27+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 23:55:27+0800 [-] Scheduling retry 3 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x101f44ac0> in 4.05500272181746 seconds.
+2021-04-19 23:55:27+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 23:55:31+0800 [-] Starting factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 23:55:31+0800 [-] Scheduling retry 4 to connect <twisted.internet.endpoints.TCP4ClientEndpoint object at 0x101f44ac0> in 5.315908521880488 seconds.
+2021-04-19 23:55:31+0800 [-] Stopping factory <buildbot_worker.pb.BotFactory object at 0x101f44820>
+2021-04-19 23:55:34+0800 [-] Received SIGTERM, shutting down.
+2021-04-19 23:55:34+0800 [-] Main loop terminated.
+2021-04-19 23:55:34+0800 [-] Server Shut Down.
