@@ -14,7 +14,6 @@
             {% if latest_question_list %}
             <h1 class="title">Do you know CI.</h1>
             <form action="/polls/vote/" method="post" class="box">
-            {% csrf_token %}
             {% for question in latest_question_list %}
                 <div class="field {% if question.default_hidden %} hidden {% endif %}">
                     <label class="label">{{ question }}</label>
