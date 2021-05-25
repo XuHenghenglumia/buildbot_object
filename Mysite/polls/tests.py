@@ -1,4 +1,4 @@
-from django.test import TestCase
+from django.test import TestCase,TransactionTestCase
 import datetime
 from django.utils import timezone
 from .models import Question
@@ -8,6 +8,7 @@ import time
 from functools import wraps
 from django.test import Client
 from .models import Choice
+import requests
 
 class QuestionModelTests(TestCase):
     def test_was_published_recently_with_future_question(self):
@@ -51,15 +52,30 @@ class ExportDataTests(TestCase):
         os.remove(filename)
     
 class performanceTests(TestCase):
-    databases = {'default'}
+    #databases = {'default'}
 
-    def test_vote(self):
-        self.client = Client()
-        #response = c.post(path='/polls/vote/',data='csrfmiddlewaretoken=Oy8l2VIsmooLYzlpNjkk6e8yo6yWGklGiF3BRbEVPGvpzv6OC3UJs5bvoltyhR2g&1=14&2=16&3=18&4=21&5=23&6=25&7=29',content_type='application/x-www-form-urlencoded')
-        #response = c.get(path='/')
-        #response = self.client.post(path='/polls/vote/',
-        #          data='1=14&2=17&3=19&4=22&5=24&6=26&7=30',
-        #          content_type='application/x-www-form-urlencoded')
-        #self.assertEqual(200,response.status_code)
-        q=Question.objects.get(pk=1)
-        self.assertEqual(q.question_text,"你是计算机相关从业者或学生吗？")
+    def test_request(self):
+        start_time=time.perf_counter()
+        url = 'http://127.0.0.1:8000/'
+        r=requests.get(url)
+        self.assertEqual(r.status_code,200)
+        url += 'polls/'
+        r=requests.get(url)
+        self.assertEqual(r.status_code,200)
+        url += 'vote/'
+        data = {
+            '1':'14',
+            '2':'16',
+            '3':'18',
+            '4':'22',
+            '5':'24',
+            '6':'28',
+            '7':'30'
+        }
+        r=requests.post(url,data=data)
+        self.assertEqual(r.status_code,200)
+        end_time=time.perf_counter()
+        cost_time=end_time-start_time
+        print("cost time: ",cost_time)
+        with open('performance.log','w') as pf:
+            pf.write("cost time: {}\n".format(cost_time))

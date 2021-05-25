@@ -4,7 +4,7 @@ import os
 from buildbot_worker.bot import Worker
 from twisted.application import service
 
-basedir = '/Users/xuheng/workspace/buildbot/worker'
+basedir = '/Users/xuheng/workspace/buildbot_object/worker'
 rotateLength = 10000000
 maxRotatedFiles = 10
 

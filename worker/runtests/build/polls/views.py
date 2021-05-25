@@ -3,6 +3,7 @@ from django.http import HttpResponse, Http404
 from polls.models import Question, Choice
 from django.template import loader
 from . import export_data
+import csv
 
 # Create your views here.
 from django.http import HttpResponse
@@ -14,16 +15,6 @@ def index(request):
 def home(request):
     return render(request,'home/home.html')
 
-def detail(request, question_id):
-    try:
-        question = Question.objects.get(pk=question_id)
-    except Question.DoesNotExist:
-        raise Http404("Question does not exist")
-    return render(request, 'polls/detail.html', {'question': question})
-
-def results(request, question_id):
-    response = "you're looking at the results of question %s"
-    return HttpResponse(response % question_id)
 
 def vote(request):
     str =  ''
@@ -44,3 +35,11 @@ def vote(request):
         return render(request, 'polls/finish.html')
     else:
         return HttpResponse("no data")
+
+def show_table(request):
+    content=[]
+    with open('data.csv','r') as dataFile:
+        reader=csv.reader(dataFile)
+        for row in reader:
+            content.append(row)
+    return render(request,'polls/result.html',{'table_data':content})

@@ -1,9 +1,14 @@
-from django.test import TestCase
+from django.test import TestCase,TransactionTestCase
 import datetime
 from django.utils import timezone
 from .models import Question
 from .export_data import export_data
 import os.path
+import time
+from functools import wraps
+from django.test import Client
+from .models import Choice
+import requests
 
 class QuestionModelTests(TestCase):
     def test_was_published_recently_with_future_question(self):
@@ -46,3 +51,31 @@ class ExportDataTests(TestCase):
             self.assertEqual(strList[2], "newdata1,newdata2,newdata3\n")
         os.remove(filename)
     
+class performanceTests(TestCase):
+    #databases = {'default'}
+
+    def test_request(self):
+        start_time=time.perf_counter()
+        url = 'http://127.0.0.1:8000/'
+        r=requests.get(url)
+        self.assertEqual(r.status_code,200)
+        url += 'polls/'
+        r=requests.get(url)
+        self.assertEqual(r.status_code,200)
+        url += 'vote/'
+        data = {
+            '1':'14',
+            '2':'16',
+            '3':'18',
+            '4':'22',
+            '5':'24',
+            '6':'28',
+            '7':'30'
+        }
+        r=requests.post(url,data=data)
+        self.assertEqual(r.status_code,200)
+        end_time=time.perf_counter()
+        cost_time=end_time-start_time
+        print("cost time: ",cost_time)
+        with open('performance.log','w') as pf:
+            pf.write("cost time: {}\n".format(cost_time))
